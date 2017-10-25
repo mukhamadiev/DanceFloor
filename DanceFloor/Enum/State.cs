@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Enum
+﻿namespace DanceFloor.Enum
 {
+    /// <summary>
+    ///     Состояние
+    /// </summary>
     public enum State
     {
         NotSet,

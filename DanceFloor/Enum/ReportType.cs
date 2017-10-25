@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Enum
+﻿namespace DanceFloor.Enum
 {
+    /// <summary>
+    ///     Тип отчета
+    /// </summary>
     public enum ReportType
     {
         Track,

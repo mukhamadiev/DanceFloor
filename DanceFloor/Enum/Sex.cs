@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Enum
+﻿namespace DanceFloor.Enum
 {
+    /// <summary>
+    ///     Пол
+    /// </summary>
     public enum Sex
     {
         Male,

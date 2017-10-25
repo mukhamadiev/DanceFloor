@@ -1,14 +1,20 @@
-﻿using DanceFloor.Enum;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Domain
+﻿namespace DanceFloor.Domain
 {
+    using Enum;
+
+    /// <summary>
+    ///     Движение
+    /// </summary>
     public interface IMotion
     {
+        /// <summary>
+        ///     Часть тела
+        /// </summary>
         BodyPart BodyPart { get; set; }
 
+        /// <summary>
+        ///     Описание движения
+        /// </summary>
         string Description { get; set; }
     }
 }

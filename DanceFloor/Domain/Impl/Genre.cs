@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Domain.Impl
+﻿namespace DanceFloor.Domain.Impl
 {
+    /// <summary>
+    ///     Жанр
+    /// </summary>
     public class Genre : IGenre
     {
+        /// <inheritdoc />
         public string Name { get; set; }
     }
 }

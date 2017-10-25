@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Enum
+﻿namespace DanceFloor.Enum
 {
+    using System.ComponentModel;
+
+    /// <summary>
+    ///     Часть тела
+    /// </summary>
     public enum BodyPart
     {
-        Torso,
-        Head,
-        Arm,
-        Leg
+        [Description("Торс")] Torso,
+
+        [Description("Голова")] Head,
+
+        [Description("Руки")] Arm,
+
+        [Description("Ноги")] Leg
     }
 }

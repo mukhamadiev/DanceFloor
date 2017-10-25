@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DanceFloor.Domain;
-using DanceFloor.Domain.Impl;
-using DanceFloor.Enum;
-
-namespace DanceFloor.Builder.Impl
+﻿namespace DanceFloor.Builder.Impl
 {
+    using Domain;
+    using Domain.Impl;
+    using Enum;
+
+    /// <summary>
+    ///     Строитель для <see cref="Dance" />
+    /// </summary>
     public class DanceBuilder : IDanceBuilder
     {
         private Dance dance;
 
+        /// <inheritdoc />
         public IDanceBuilder ArmMotion(string description)
         {
             this.dance.Motions.Add(new Motion
@@ -22,6 +23,7 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder AvailableGenre(IGenre genre)
         {
             this.dance.AvailableGenres.Add(genre);
@@ -29,11 +31,13 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDance Build()
         {
             return this.dance;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder Create()
         {
             this.dance = new Dance();
@@ -41,6 +45,7 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder HeadMotion(string description)
         {
             this.dance.Motions.Add(new Motion
@@ -52,6 +57,7 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder LegMotion(string description)
         {
             this.dance.Motions.Add(new Motion
@@ -63,6 +69,7 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder Name(string name)
         {
             this.dance.Name = name;
@@ -70,6 +77,7 @@ namespace DanceFloor.Builder.Impl
             return this;
         }
 
+        /// <inheritdoc />
         public IDanceBuilder TorsoMotion(string description)
         {
             this.dance.Motions.Add(new Motion

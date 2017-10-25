@@ -1,15 +1,10 @@
 ﻿namespace DanceFloor.Domain
 {
     /// <summary>
-    ///     Трек
+    ///     Контекст поведения
     /// </summary>
-    public interface ITrack
+    public interface IBehaviorContext
     {
-        /// <summary>
-        ///     Номер
-        /// </summary>
-        int Number { get; set; }
-
         /// <summary>
         ///     Жанр
         /// </summary>

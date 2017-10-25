@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Domain
+﻿namespace DanceFloor.Domain
 {
+    /// <summary>
+    ///     Жанр
+    /// </summary>
     public interface IGenre
     {
+        /// <summary>
+        ///     Название
+        /// </summary>
         string Name { get; set; }
     }
 }

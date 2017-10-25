@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DanceFloor.Domain
+﻿namespace DanceFloor.Domain
 {
+    /// <summary>
+    ///     Поведение
+    /// </summary>
     public interface IBehavior
     {
-        string Name { get; set; }
+        /// <summary>
+        ///     Название
+        /// </summary>
+        string Name { get; }
 
-        void Apply(IClub club, IDancer dancer);
+        /// <summary>
+        ///     Применить
+        /// </summary>
+        /// <param name="behaviorContext">Контекст поведения</param>
+        /// <param name="dancer">Посетитель</param>
+        void Apply(IBehaviorContext behaviorContext, IDancer dancer);
     }
 }

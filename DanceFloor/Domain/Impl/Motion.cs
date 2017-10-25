@@ -1,13 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DanceFloor.Enum;
-
-namespace DanceFloor.Domain.Impl
+﻿namespace DanceFloor.Domain.Impl
 {
+    using Enum;
+    using Util;
+
+    /// <summary>
+    ///     Движение
+    /// </summary>
     public class Motion : IMotion
     {
+        /// <inheritdoc />
         public BodyPart BodyPart { get; set; }
+
+        /// <inheritdoc />
         public string Description { get; set; }
+
+        /// <inheritdoc />
+        public override string ToString()
+        {
+            return $"{this.BodyPart.GetDescription()}: {this.Description}";
+        }
     }
 }
